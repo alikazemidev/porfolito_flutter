@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,13 +12,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        fontFamily: 'Vazir',
+      ),
       home: Scaffold(
-        appBar: AppBar(
-          title: Text(
-            'porfolito',
+        body: SafeArea(
+          child: Text(
+            'علی کاظمی',
           ),
         ),
-        body: Center(child: Image.asset('images/flutter.png')),
       ),
     );
   }
